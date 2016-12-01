@@ -24,7 +24,11 @@ gulp.task('commit', function() {
 gulp.task('push', function() {
     console.log('正在推送到远程...');
     git.push('origin', 'master', function(err) {
-        if (err) throw err;
+        if (err) {
+            throw err
+        } else {
+            console.log('完成任务')
+        };
     });
 });
 
