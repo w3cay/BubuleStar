@@ -22,7 +22,7 @@ gulp.task('commit', function() {
 });
 
 gulp.task('pull', function() {
-    console.log('正在拉取最新代码...');
+    console.log('正在获取最新代码...');
     git.pull('origin', '', function(err) {
         if (err) throw err;
     });
