@@ -8,13 +8,13 @@ gulp.task('init', function() {
 });
 
 gulp.task('add', function() {
-    console.log('adding...');
+    console.log('添加到暂存区...');
     return gulp.src('.')
         .pipe(git.add());
 });
 
 gulp.task('commit', function() {
-    console.log('commiting');
+    console.log('正在提交...');
     if (argv.m) {
         return gulp.src('.')
             .pipe(git.commit(argv.m));
@@ -22,7 +22,7 @@ gulp.task('commit', function() {
 });
 
 gulp.task('push', function() {
-    console.log('pushing...');
+    console.log('正在推送到远程...');
     git.push('origin', 'master', function(err) {
         if (err) throw err;
     });
