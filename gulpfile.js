@@ -21,6 +21,12 @@ gulp.task('commit', function() {
     }
 });
 
+gulp.task('pull', function() {
+    git.pull('origin', function(err) {
+        if (err) throw err;
+    });
+});
+
 gulp.task('push', function() {
     console.log('正在推送到远程...');
     git.push('origin', 'master', function(err) {
@@ -33,5 +39,5 @@ gulp.task('push', function() {
 });
 
 gulp.task('gitsend', function() {
-    runSequence('add', 'commit', 'push');
+    runSequence('add', 'commit', 'pull', 'push');
 });
