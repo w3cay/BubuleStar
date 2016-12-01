@@ -1,0 +1,25 @@
+{
+  "name": "bubulestar",
+  "version": "1.0.0",
+  "description": "babab",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3cay/BubuleStar.git"
+  },
+  "author": "Bright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w3cay/BubuleStar/issues"
+  },
+  "homepage": "https://github.com/w3cay/BubuleStar#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-git": "^1.12.0",
+    "run-sequence": "^1.2.2",
+    "yargs": "^6.4.0"
+  }
+}
